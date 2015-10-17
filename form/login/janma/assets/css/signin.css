@@ -16,6 +16,11 @@ body {
     border-radius: 10px;
     background: url(../img/bg-form.jpg) center top;
 }
+
+
+.form-signin2{
+    background: url(../img/bg-form.jpg) center bottom;
+}
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
     margin-bottom: 10px;
