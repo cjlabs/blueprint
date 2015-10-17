@@ -87,6 +87,17 @@
   color: #fff;
 }
 
+
+.checkbox-pink input[type="checkbox"]:checked + label::before,
+.checkbox-pink input[type="radio"]:checked + label::before {
+  background-color: #F81775;
+  border-color: #F81775;
+}
+.checkbox-pink input[type="checkbox"]:checked + label::after,
+.checkbox-pink input[type="radio"]:checked + label::after {
+  color: #fff;
+}
+
 .checkbox-info input[type="checkbox"]:checked + label::before,
 .checkbox-info input[type="radio"]:checked + label::before {
   background-color: #5bc0de;
