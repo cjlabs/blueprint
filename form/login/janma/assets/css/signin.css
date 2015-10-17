@@ -7,13 +7,14 @@ body {
 
 .form-signin {
     max-width: 330px;
-    padding: 25px;
+    padding: 0 25px;
     margin: 20px auto;
     background: #390937;
-    color: #D7CED7;
+    color: white;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    background: url(../img/bg-form.jpg) center top;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -41,6 +42,11 @@ body {
     margin-bottom: 10px;
 }
 
+.form-signin  header{
+    margin: 5px 0px;
+    padding: 20px 0px;
+}
+
 .btn.btn-pink{
     background: #F81775;
     color: white;
@@ -48,6 +54,14 @@ body {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+}
+
+.btn.btn-pink:hover{
+    background-color: rgba(248, 23, 117, 0.5);
+    -webkit-transition: background-color 500ms ease-out .3s;
+    -moz-transition: background-color 500ms ease-out .3s;
+    -o-transition: background-color 500ms ease-out .3s;
+    transition: background-color 500ms ease-out .3s;
 }
 
 .input-transparent{
@@ -75,7 +89,7 @@ body {
     border-radius: 8px;
 }
 
-.color-pink, .color-pink a:link{
+.color-pink, .color-pink a,.color-pink a:link{
     color: #FB1575;
     border-bottom:none;
 }
@@ -85,10 +99,15 @@ body {
 }
 
 
-a:link {
+a, a:link {
     color: white;
     text-decoration: none;
     border-bottom: 3px solid #F81775;
+}
+a:hover{
+    color: #F81775;
+    text-decoration: none;
+    border-bottom: 3px solid white;
 }
 
 .shadow-box{
