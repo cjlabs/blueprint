@@ -1,0 +1,29 @@
+{
+  "name": "odoh",
+  "homepage": "https://github.com/cjlabs/odoh",
+  "authors": [
+    "puterakahfi <puterakahfi@gmail.com>"
+  ],
+  "description": "one day one html",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "free",
+    "html",
+    "ui",
+    "html",
+    "ux",
+    "collections"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.5"
+  }
+}
