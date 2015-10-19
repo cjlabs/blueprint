@@ -25,6 +25,9 @@
   ],
   "dependencies": {
     "bootstrap": "3.3.5",
-    "font-awesome": "fontawesome#4.4.0"
+    "font-awesome": "fontawesome#4.4.0",
+    "bower": "*",
+    "install": "~1.0.4",
+    "jquery-validation": "~1.14.0"
   }
 }
