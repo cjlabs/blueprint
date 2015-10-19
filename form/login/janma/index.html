@@ -32,9 +32,8 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-
-                    <form class="form-signin shadow-box">
+                <div class="col-md-12">
+                    <form class="form-signin shadow-box" method="post">
                         <header>
                             <div class="row text-center">
                                 <h3><strong>JANMA</strong> LOGIN PAGE</h3>
@@ -43,25 +42,25 @@
                         <div class="text-capitalize">
                             <div class="row">
                                 <div class="col-md-6 col-xs-6">
-                                    <h4 class="form-signin-heading text-left"><a href="#"><strong>SIGN IN</strong></a></h4>
+                                    <h4 class="form-signin-heading text-left"><a id="signin" href="#"><strong>SIGN IN</strong></a></h4>
                                 </div>
                                 <div class="col-md-6 col-xs-6">
-                                    <h4 class="form-signin-heading text-right"> <strong>SIGN UP</strong></h4>
+                                    <h4 class="form-signin-heading text-right"> <a id="signup" href="#"><strong>SIGN UP</strong></a></h4>
                                 </div>
                             </div>
                             <hr class="transparent"/><br/>
                         </div>
-                        <div class="row">
+                        <div class="row form-data" id="form-login">
                             <div class="col-md-12">
                                 <div class="form-group form-group-sm">
                                     <label class="sm-label" for="exampleInputEmail1"><i class="fa fa-user"></i>
                                         USERNAME</label>
-                                    <input type="email" class="form-control input-sm input-transparent md-radius" id="exampleInputEmail1" placeholder="">
+                                    <input required type="email" class="form-control input-sm input-transparent md-radius" id="exampleInputEmail1" placeholder="">
                                 </div>
                                 <div class="form-group form-group-sm">
                                     <label class="sm-label" for="exampleInputPassword1"><i class="fa fa-asterisk"></i>
                                         PASSWORD</label> <label class="sm-label text-right pull-right color-pink"> <a href="#"><b>FORGOT ?</b></a></label>
-                                    <input type="password" class="form-control input-sm input-transparent md-radius" id="exampleInputPassword1" placeholder="">
+                                    <input required type="password" class="form-control input-sm input-transparent md-radius" id="exampleInputPassword1" placeholder="">
                                 </div>
                                 <div class="checkbox checkbox-pink">
                                     <input type="checkbox" checked="" id="checkbox6">
@@ -74,46 +73,31 @@
                                 <footer class="text-center"><small>&nbsp;</small></footer>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="col-md-6">
 
-                    <form class="form-signin form-signin2 shadow-box">
-                        <header>
-                            <div class="row text-center">
-                                <h3><strong>JANMA</strong> LOGIN PAGE</h3>
-                            </div>
-                        </header>
-                        <div class="text-capitalize">
-                            <div class="row">
-                                <div class="col-md-6 col-xs-6">
-                                    <h4 class="form-signin-heading text-left"><a href="#"><strong>SIGN IN</strong></a></h4>
-                                </div>
-                                <div class="col-md-6 col-xs-6">
-                                    <h4 class="form-signin-heading text-right"> <strong>SIGN UP</strong></h4>
-                                </div>
-                            </div>
-                            <hr class="transparent"/><br/>
-                        </div>
-                        <div class="row">
+
+                        <div class="row form-data" id="form-register">
                             <div class="col-md-12">
                                 <div class="form-group form-group-sm">
-                                    <label class="sm-label" for="exampleInputEmail2"><i class="fa fa-user"></i>
-                                        USERNAME</label>
-                                    <input type="email" class="form-control input-sm input-transparent md-radius" id="exampleInputEmail2" placeholder="">
+                                    <label class="sm-label" for="exampleInputEmail1"><i class="fa fa-user"></i>
+                                        USERNAME </label>
+                                    <input required type="email" class="form-control input-sm input-transparent md-radius" id="exampleInputEmail1" placeholder="">
                                 </div>
                                 <div class="form-group form-group-sm">
-                                    <label class="sm-label" for="exampleInputPassword2"><i class="fa fa-asterisk"></i>
-                                        PASSWORD</label> <label class="sm-label text-right pull-right color-pink"> <a href="#"><b>FORGOT ?</b></a></label>
-                                    <input type="password" class="form-control input-sm input-transparent md-radius" id="exampleInputPassword2" placeholder="">
+                                    <label class="sm-label" for="exampleInputEmail1"><i class="fa fa-envelope"></i>
+                                        EMAIL </label>
+                                    <input required type="email" class="form-control input-sm input-transparent md-radius" id="exampleInputEmail1" placeholder="">
                                 </div>
-                                <div class="checkbox checkbox-pink">
-                                    <input type="checkbox" checked="" id="checkbox6">
-                                    <label for="checkbox6">
-                                        <small><strong>Remember me</strong></small>
-                                    </label>
+                                <div class="form-group form-group-sm">
+                                    <label class="sm-label" for="exampleInputPassword1"><i class="fa fa-asterisk"></i>
+                                        PASSWORD</label> <label class="sm-label text-right pull-right color-pink"></label>
+                                    <input required type="password" class="form-control input-sm input-transparent md-radius" id="exampleInputPassword1" placeholder="">
                                 </div>
-                                <button class="btn  btn-block btn-sm btn-pink" type="submit"><strong>Sign in</strong></button>
+                                 <div class="form-group form-group-sm">
+                                    <label class="sm-label" for="exampleInputPassword1"><i class="fa fa-asterisk"></i>
+                                        CONFIRM PASSWORD</label> <label class="sm-label text-right pull-right color-pink"> </label>
+                                    <input required type="password" class="form-control input-sm input-transparent md-radius" id="exampleInputPassword1" placeholder="">
+                                </div>
+                                <button class="btn  btn-block btn-sm btn-pink" type="submit"><strong>Sign Up</strong></button>
                                 <hr class="transparent"/>
                                 <footer class="text-center"><small>&nbsp;</small></footer>
                             </div>
@@ -129,5 +113,9 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../../../assets/libs/jquery/dist/jquery.min.js"></script>
+        <script src="assets/js/janma.js"></script>
+
+
     </body>
 </html>
